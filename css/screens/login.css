@@ -1,9 +1,37 @@
+/* body::after {
+  content: "";
+  background: url("https://images-na.ssl-images-amazon.com/images/I/81hXyIewnxL._AC_SY679_.jpg");
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-position: top;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+} */
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  filter: brightness(50%);
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .welcome-header {
   margin: 90px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 
 .welcome-header__title {
@@ -14,45 +42,54 @@
 
 .welcome-header__text {
   width: 60%;
-  opacity: 0.7;
+  font-weight: 600;
 }
 
-#login-form {
+#dormitory-form {
   display: flex;
-  flex-direction: column;
-  margin: 0px 30px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px 0;
 }
 
-#login-form input {
+.dorm-img img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.warning {
+  position: fixed;
+  display: flex;
+  height: 40%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#dormitory-form input {
   border: none;
-  padding: 15px 0px;
-  font-size: 18px;
+  padding: 15px 0;
+  font-size: 15px;
   margin-bottom: 25px;
+  background-color: none;
+  color: white;
 }
 
-#login-form input:not([type="submit"]) {
+#dormitory-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
 
-#login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+#dormitory-form input:focus {
+  border-color: #651811;
 }
 
-#login-form input:focus {
-  border-color: var(--yellow);
-}
-
-#login-form input[type="submit"] {
-  background-color: var(--yellow);
+#dormitory-form input[type="submit"] {
+  background-color: #651811;
   cursor: pointer;
-  padding: 20px 0px;
+  padding: 20px;
   border-radius: 5px;
-}
-
-#login-form a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  font-size: 13px;
 }
