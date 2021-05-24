@@ -18,6 +18,7 @@
 }
 
 .screen-header__icons {
+  justify-content: space-evenly;
   position: relative;
 }
 .screen-header__dot {
