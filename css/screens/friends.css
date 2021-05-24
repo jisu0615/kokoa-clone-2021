@@ -1,7 +1,24 @@
+#Gryffindor {
+  background-color: var(--red);
+}
+
+#Hufflepuff {
+  background-color: var(--yellow);
+}
+
+#Ravenclaw {
+  background-color: var(--blue);
+}
+
+#Slytherin {
+  background-color: var(--green);
+}
+
 #friends-display-link {
   text-align: center;
   display: block;
-  background-color: #fafafa;
+  background-color: var(--black);
+  color: white;
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 15px;
@@ -9,7 +26,7 @@
 }
 
 #friends-display-link i {
-  color: rgba(0, 0, 0, 0.3);
+  color: white;
 }
 
 .friends-screen {
@@ -40,7 +57,7 @@
 }
 
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: var(--black);
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -50,5 +67,5 @@
   align-items: center;
   font-size: 132px;
   animation: hideSplashScreen 0.3s ease-in-out forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
